@@ -54,13 +54,22 @@ const funciones = {
     },
 
     filtrar(estado) {
-        console.log('El usuario eligió filtrar');
+        /*console.log('El usuario eligió filtrar');
         /* 
         leer el JSON
         filtramos array con .filter
         consologueamos el array filtrado
 
         */
+       const tareas = this.leerJSON();
+       const tareasFiltradas = tareas.filter((tarea)=>{
+           return estado == tarea.estado;
+       });
+       tareasFiltradas.forEach((tarea, i) => {
+        console.log(i+1 + ')'+ tarea.titulo + ' - '+tarea.estado)
+        
+    });
+
     }
 }
 
