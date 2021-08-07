@@ -1,25 +1,38 @@
-const fs = require('fs');
-const data = fs.readFileSync('tareas.json', 'utf-8')
 
-const tareas = JSON.parse(data);
 
 const accionDelUsuario = process.argv[2];
 
+const funciones = require('./funciones')
+
 switch (accionDelUsuario) {
     case 'listar':
-       
+        
+        funciones.listar();
+
     break;
+
     case 'agregar':
+
+        funciones.agregar();
         
     break; 
+
     case 'filtrar':
+
+        funciones.filtrar();
        
     break;
+
     case undefined:
+
         console.log('No elegiste nada. Opciones: listar, filtrar o agregar');
+    
     break;
+
     default:
+
         console.log('Elegiste una opcion incorrecta')
+    
     break;
 }
 
