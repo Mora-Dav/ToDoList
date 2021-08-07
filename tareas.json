@@ -1,0 +1,12 @@
+[
+    {
+        "titulo": "Crear vistas",
+        "estado": "Realizado"
+    }, {
+        "titulo": "implementar express",
+        "estado": "Realizado"
+    },  {
+        "titulo": "Crud de productos",
+        "estado": "Pendiente"
+    }
+]
