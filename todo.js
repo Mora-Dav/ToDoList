@@ -2,6 +2,8 @@
 
 const accionDelUsuario = process.argv[2];
 
+const tareaNueva = process.argv[3]
+
 const funciones = require('./funciones')
 
 switch (accionDelUsuario) {
@@ -13,7 +15,7 @@ switch (accionDelUsuario) {
 
     case 'agregar':
 
-        funciones.agregar();
+        funciones.agregar(tareaNueva);
         
     break; 
 

@@ -30,9 +30,29 @@ const funciones = {
            
        });
     },
-    agregar() {
+    agregar(tarea) {
         console.log('El usuario eligió agregar');
+        /*
+        buscar el archivo y leerlo
+        guardar archivo en memoria(variable)
+        obtener la tarea desde el parametro
+        transformar en objeto tipo tarea
+        sumar tarea al objeto
+        guardar nuevo array en archivo
+        Informar que la tarea se guardó correctamente
+
+        */
+       const tareas= this.leerJSON();
+       const nuevaTarea = {
+           titulo: tarea,
+            estado: 'pendiente'
+        }
+        tareas.push(nuevaTarea);
+        this.escribirJSON(tareas);
+        console.log ('tarea guardada con éxito');
+
     },
+
     filtrar() {
         console.log('El usuario eligió filtrar');
     }
