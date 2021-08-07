@@ -4,6 +4,8 @@ const accionDelUsuario = process.argv[2];
 
 const tareaNueva = process.argv[3]
 
+const estado = process.argv[3]
+
 const funciones = require('./funciones')
 
 switch (accionDelUsuario) {
@@ -21,7 +23,7 @@ switch (accionDelUsuario) {
 
     case 'filtrar':
 
-        funciones.filtrar();
+        funciones.filtrar(estado);
        
     break;
 

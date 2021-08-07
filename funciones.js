@@ -53,8 +53,14 @@ const funciones = {
 
     },
 
-    filtrar() {
+    filtrar(estado) {
         console.log('El usuario eligió filtrar');
+        /* 
+        leer el JSON
+        filtramos array con .filter
+        consologueamos el array filtrado
+
+        */
     }
 }
 
