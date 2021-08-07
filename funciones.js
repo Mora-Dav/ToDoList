@@ -14,7 +14,7 @@ const funciones = {
 
     escribirJSON: function(tareas) {
         return fs.writeFileSync('tareas.json', JSON.stringify(tareas, null, ' '))
-    }
+    },
 
     listar () {
         console.log('El usuario eligió listar');
