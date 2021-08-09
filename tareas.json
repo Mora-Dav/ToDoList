@@ -14,5 +14,13 @@
  {
   "titulo": "crear json de productos",
   "estado": "pendiente"
+ },
+ {
+  "titulo": "rutas",
+  "estado": "pendiente"
+ },
+ {
+  "titulo": "rutas en express",
+  "estado": "pendiente"
  }
 ]
